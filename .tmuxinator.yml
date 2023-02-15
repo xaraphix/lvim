@@ -1,0 +1,105 @@
+# ./.tmuxinator.yml
+
+name: araphix
+root: ~/
+
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - Arch: 
+  - Blog: ssh oracle
+  - BMX: ssh bmx
+  - Playground: ssh playground
+  - RaspberryPi: ssh pi
+  - macos: ssh macos
+  - Android: ssh pixel
+  - Prod:  ssh prod
+  - Awesome: vim ~/.config/awesome/rc.lua
+  - Script: vim ~/scripts/volume_up.sh
+  - Learning-Rust:   
+      panes:
+      - cd /playground/learning-rust  
+      - cd /playground/learning-rust
+  - Learning-React:  
+      panes:
+      - cd /playground/learning-react 
+      - cd /playground/learning-react
+  - Learning-Elixir: 
+      panes:
+      - cd /playground/learning-elixir
+      - cd /playground/learning-elixir
+  - Learning-Vue:    
+      panes:
+      - cd /playground/learning-vue   
+      - cd /playground/learning-vue
+  - Learning-Flutter:
+      panes:
+      - cd /playground/learning-Flutter
+      - cd /playground/learning-Flutter
+  - Learning-Wasm:   
+      panes:
+      - cd /playground/learning-wasm  
+      - cd /playground/learning-wasm
+  - Learning-Nxt:    
+      panes:
+      - cd /playground/learning-Nxt   
+      - cd /playground/learning-Nxt
+  - Learning-Gatsby: 
+      panes:
+      - cd /playground/learning-gatsby
+      - cd /playground/learning-gatsby
+  - Luki:
+      panes:
+      - cd /playground/luki
+      - cd /playground/luki
+  - Dawki: cd /playground/dawki
+  - Xafku: cd /playground/xafku
+  - Liqhi: cd /playground/liqhi
+  - Nftix: cd /playground/nftix/
+  - Fincal: cd /playground/fincal
+  - SuyashSingh: cd /playground/suyashsingh.in/
+  - SeaVu: cd /playground/
+  - PIT: cd /playground/
+  - Vipeax: cd /playground/
+  - Feahnix: cd /playground/
+  - T1: 
+  - T2: 
+  - T3: 
